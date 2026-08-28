@@ -1,7 +1,7 @@
 ---
 name: espanol-natural
 description: Hace que Claude escriba en español como un hablante nativo y natural, no como una IA traducida del inglés. Úsala cuando pidan "escribe en español natural", "que no suene a IA", "quita el tono de robot", "redacta esto en español nativo", "revisa mi español", "suena a traducción", o cuando el texto tenga calcos del inglés y muletillas de IA. Tiene tres modos (revisar, reescribir, editar) y dialecto configurable (neutro por defecto, o colombiano, mexicano, rioplatense, España).
-version: 1.1.0
+version: 1.2.0
 license: MIT
 compatibility: Cualquier asistente de código compatible con el formato SKILL.md de agentskills.io (Claude Code, Cowork, Cursor, etc.). No requiere herramientas ni APIs externas.
 metadata:
@@ -193,15 +193,32 @@ Regla general: si quitas el conector y la frase sigue clara, no lo necesitabas.
 
 ---
 
-## Adecuación de registro
+## Casos por tipo de texto
 
-El español natural cambia mucho según el tipo de texto. La misma idea no se escribe igual en un WhatsApp que en un contrato. Ajusta el tono a lo que corresponde, no a un formalismo genérico.
+El español natural cambia mucho según dónde se escribe. La misma idea no se redacta igual en un WhatsApp que en un contrato. Ajusta el tono a lo que corresponde, no a un formalismo genérico.
 
-- **Cierres de correo**: "un abrazo" va en un correo cercano, no en uno formal corporativo. En formal: "saludos", "quedo atento/a", "un cordial saludo".
-- **Buzzwords**: aceptables (con medida) en marketing; venenosas en textos jurídicos o técnicos.
-- **Exclamaciones y emojis**: naturales en chat y redes; fuera de lugar en documentación o comunicación institucional.
+| Tipo de texto | Trato | Tono | Cierres | Emojis | Ojo con |
+|---|---|---|---|---|---|
+| **Correo formal / institucional** | usted | sobrio, claro | "quedo atento", "un cordial saludo" | no | buzzwords, "estimado/a" acartonado |
+| **Correo cercano (equipo)** | tú | directo, humano | "saludos", "un abrazo" | opcional, 1 | fórmulas de relleno |
+| **WhatsApp / chat** | tú | natural, breve | "cualquier cosa, pendiente" | sí, con medida | cierres formales, "realicé/solicitado" |
+| **Redes / LinkedIn** | tú (o "ustedes") | con voz propia | — | 0–1, nunca 🚀 de relleno | reflexión genérica, pregunta retórica de cierre |
+| **Documentación técnica** | **impersonal o "nosotros"** | preciso, sin adornos | — | no | "potente", "de manera eficiente", relleno |
+| **Soporte al cliente** | tú/usted según marca | empático y concreto | "gracias por tu paciencia" | no | guion robótico, "a la brevedad posible" |
+| **Landing / marketing** | tú | claro, con gancho real | CTA concreto | según marca | inflar el tono (principio #6) |
+| **Legal / contrato** | impersonal / usted | formal preciso | fórmulas del género | no | buzzwords, jerga de moda |
 
-*(Los "casos por tipo de texto" detallados —correo, chat, redes, documentación técnica— se ampliarán en una sección propia).*
+**Documentación técnica: impersonal, nunca "debes".** Usa la forma impersonal con "se" o la primera persona del plural, no el "tú" directo.
+- ✅ "Se debe dar clic en el botón de arriba." / "Damos clic arriba."
+- ❌ "Debes dar clic en el botón de arriba."
+
+### Registro según el dialecto
+
+El **trato** de la tabla (tú = informal, usted = formal) vale para **Colombia, el español neutro y el resto de países**. Estos cambian:
+
+- **Argentina / rioplatense**: lo informal es **voseo** ("vos tenés", "vos sabés"). El **usted es netamente formal**, no se usa en trato cercano.
+- **España**: el plural informal es **vosotros** ("¿tenéis un momento?"); "ustedes" queda solo para lo formal.
+- **México**: **sube un punto la formalidad en todo lo profesional** — más "usted" y fórmulas cuidadas donde otros países usarían "tú".
 
 ---
 
