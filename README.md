@@ -11,7 +11,16 @@ El "español de IA" es correcto pero plano: estructuras calcadas del inglés, mu
 - **Edita** un archivo en el sitio.
 - Ajusta el **dialecto**: neutro latinoamericano por defecto, o colombiano, mexicano, rioplatense o de España.
 
-Cubre calcos del inglés, muletillas de IA, conectores repetidos, puntuación española (¿ ¡, mayúsculas de título, coma decimal) y tono de folleto.
+Cubre:
+
+- **Banco de calcos** en dos niveles: los que se marcan siempre (calcos sintácticos, falsos amigos, negocios y finanzas) y los ya asentados en Latinoamérica (pulido opcional), cada uno con sus *carve-outs* para no sobre-corregir.
+- **Muletillas de IA** ("es importante señalar que...", "no dudes en...") y *buzzwords* que dañan textos formales.
+- **Fallos gramaticales** típicos de traducción: concordancia, coma de hipérbaton.
+- **Ritmo, conectores y estructura**: rayas de más, "no es X sino Y", regla de tres, párrafos clónicos.
+- **Puntuación española**: ¿ ¡, mayúsculas de título, coma decimal.
+- **Fidelidad al registro**: no infla un texto sobrio ni traiciona su tono.
+
+Incluye ejemplos en **tres niveles** (IA → intento humano → natural) que muestran los patrones más pegajosos.
 
 ## Instalación
 
