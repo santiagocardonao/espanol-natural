@@ -1,7 +1,7 @@
 ---
 name: espanol-natural
 description: Hace que Claude escriba en español como un hablante nativo y natural, no como una IA traducida del inglés. Úsala cuando pidan "escribe en español natural", "que no suene a IA", "quita el tono de robot", "redacta esto en español nativo", "revisa mi español", "suena a traducción", o cuando el texto tenga calcos del inglés y muletillas de IA. Tiene tres modos (revisar, reescribir, editar) y dialecto configurable (neutro por defecto, o colombiano, mexicano, rioplatense, España).
-version: 1.2.0
+version: 1.3.0
 license: MIT
 compatibility: Cualquier asistente de código compatible con el formato SKILL.md de agentskills.io (Claude Code, Cowork, Cursor, etc.). No requiere herramientas ni APIs externas.
 metadata:
@@ -178,7 +178,7 @@ Regla general: si quitas el conector y la frase sigue clara, no lo necesitabas.
 
 ## Estructura y formato
 
-- **Rayas de inciso (—) por todos lados** → en prosa, muchas veces va mejor una coma, un punto o un paréntesis. La raya de IA suele calcar el *em dash* inglés. (En diálogo literario sí es correcta).
+- **Rayas de inciso (—)** → úsala SOLO en texto literario (diálogo). En cualquier otro registro —correo, marketing, documentación, redes, chat— reemplázala por coma, punto, dos puntos o paréntesis. La raya suelta suele calcar el *em dash* inglés.
 - **Negrita en exceso** → una expresión en negrita por sección como mucho, o ninguna.
 - **Listas para todo** → convierte en párrafo lo que sea prosa. Reserva las viñetas para lo que de verdad es una lista (pasos, requisitos).
 - **"No se trata de X, sino de Y"** → uno de los tells más fuertes. Reescríbelo como afirmación directa. Una vez por texto como máximo, y solo si de verdad aporta. Ojo con la versión partida en dos frases ("La clave no es la tecnología. Son las personas.") y con la enumeración adversativa ("No es esto, no es lo otro, es aquello").
@@ -319,6 +319,26 @@ Algunos ejemplos tienen **tres niveles** (IA → intento humano → natural). Es
 
 > **Natural:** "Hoy les comparto una reflexión. En un mundo cada vez más rápido y tecnológico, adaptarse dejó de ser opcional. Y la clave no es la tecnología: son las personas."
 > *El patrón "no es X, sino Y" se conserva suavizado con dos puntos. Es un tell fuerte: úsalo una vez como mucho.*
+
+---
+
+## Contraejemplos (cuándo un "tell" está bien y NO se toca)
+
+La skill sobre-corrige si trata cada patrón como error automático. Estos casos son legítimos: déjalos en paz.
+
+1. **"Robusto"** es correcto en contexto técnico/estadístico: "un sistema robusto", "un estimador robusto". El tell es solo en marketing genérico.
+2. **Voz pasiva** es correcta cuando el agente es irrelevante o desconocido, o en registro periodístico: "El sospechoso fue detenido anoche". No toda pasiva es calco.
+3. **"Sin embargo"** es correcto cuando hay concesión real. El tell es repetirlo o meterlo sin contraste.
+4. **"No es X, sino Y"** es legítimo **una vez**, cuando el contraste aporta de verdad. El tell es la repetición y el falso equilibrio.
+5. **Listas y viñetas** son correctas para pasos, requisitos o especificaciones. El tell es picar prosa en viñetas.
+6. **Frases cortas** son correctas para énfasis puntual. El tell es picar *todo* sin jerarquía.
+7. **Gerundio** es correcto de modo o simultaneidad: "Entró corriendo", "Aprendió leyendo". El tell es solo el de posterioridad calcado.
+8. **Nivel 2 del banco** (reportar, agenda, evidencia, asumir, remover) es correcto en español latino corriente. No marcar salvo registro formal.
+9. **Emojis y exclamaciones** son correctos en chat y redes. El tell es meterlos en documentación o legal.
+10. **"Usted"** es natural en muchos contextos —y en varias zonas de Colombia es hasta cercano—. No forzar "tú".
+11. **Repetir una palabra clara** a veces es mejor que rotar sinónimos. Repetir no siempre es pobreza.
+
+**La raya (—) NO entra aquí.** Es la excepción: úsala solo en texto literario; en cualquier otro registro, reemplázala (ver "Estructura y formato").
 
 ---
 

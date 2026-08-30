@@ -19,6 +19,8 @@ Cubre:
 - **Ritmo, conectores y estructura**: rayas de más, "no es X sino Y", regla de tres, párrafos clónicos.
 - **Puntuación española**: ¿ ¡, mayúsculas de título, coma decimal.
 - **Fidelidad al registro**: no infla un texto sobrio ni traiciona su tono.
+- **Casos por tipo de texto**: correo, chat, redes, documentación técnica, soporte, landing y legal, con registro por dialecto (voseo en Argentina, vosotros en España, más formalidad en México).
+- **Contraejemplos**: cuándo un patrón marcado en realidad está bien, para no sobre-corregir.
 
 Incluye ejemplos en **tres niveles** (IA → intento humano → natural) que muestran los patrones más pegajosos.
 
