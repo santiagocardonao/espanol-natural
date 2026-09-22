@@ -31,11 +31,9 @@ Incluye ejemplos en **tres niveles** (IA → intento humano → natural) que mue
 Clona el repo y enlázalo a tu carpeta de skills:
 
 ```bash
-git clone https://github.com/USUARIO/espanol-natural.git ~/Developer/espanol-natural
+git clone https://github.com/santiagocardonao/espanol-natural.git ~/Developer/espanol-natural
 ln -s ~/Developer/espanol-natural ~/.claude/skills/espanol-natural
 ```
-
-(Reemplaza `USUARIO` por tu usuario de GitHub.)
 
 ### En Cowork
 
